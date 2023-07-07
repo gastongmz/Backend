@@ -7,7 +7,8 @@ const SolicitudesSchema = new mongoose.Schema({
     apellido:String,    
     email:String,
     telefono:String,
-    mensaje:String
+    mensaje:String,
+    fechaAlta:Date,
 });
 
 

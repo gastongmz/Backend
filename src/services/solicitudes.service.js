@@ -11,11 +11,23 @@ class SolicitudesService {
       throw new Error("Error in getSolicitudById Service");
     }  
   }
+  async getSolicitudById(id) {
+    try {
+      let solicitud = await SolicitudesModel.findOne({_id:id});
+      return solicitud;
+    } catch (err) {
+      console.error(err);
+      throw new Error("Error in getSolicitudById Service");
+    }
+  }
 
   async createSolicitud(solicitud) {
     try {
-      let savedSolicitud= await SolicitudesModel.create(solicitud);
-      return savedSolicitud;
+      //Fecha de alta de la solicitud
+      solicitud.fechaAlta = Date.now()
+      let savedSolicitud= await SolicitudesModel.create(solicitud);      
+      ///console.log(savedSolicitud)
+       return savedSolicitud;
     
     } catch (err) {
       console.error(err);
