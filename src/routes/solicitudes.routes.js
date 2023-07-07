@@ -5,23 +5,10 @@ const checkFields = require('../middlewares/validateFields');
 const { check } = require("express-validator");
 
 const router = Router();
-/*
-router.get('/',
-[
-    check('jwt').not().isEmpty(),
-    checkFields
-],
-jwtValidator, solicitudesController.getSolicitudes); //GET PRODUCTOS
 
-router.get('/:id',[
-    check('jwt').not().isEmpty(),
-    checkFields
-],jwtValidator,solicitudesController.getSolicitudById); //GET PRODUCTOS BY ID
-*/
 router.get('/:usuarioPorfolio',[    
     checkFields
-],jwtValidator,solicitudesController.getSolicitudByEmail); //GET PRODUCTOS BY EMAIL
-
+],jwtValidator,solicitudesController.getSolicitudByUsuarioPorfolio); //GET SOLICITUDES BY USUARIO
 
 router.post('/',[    
     check('empresa'),
@@ -32,16 +19,17 @@ router.post('/',[
     check('telefono').not().isEmpty(),
     check('mensaje').not().isEmpty(),
     checkFields
-],solicitudesController.createSolicitud); //POST PRODUCTOS
+],solicitudesController.createSolicitud); //POST SOLICITUDES
+
 /*
 router.put('/:id',[
     check('jwt').not().isEmpty(),
     checkFields
-],jwtValidator,solicitudesController.updateSolicitud) //PUT PRODUCTOS*/
+],jwtValidator,solicitudesController.updateSolicitud) //PUT SOLICITUDES*/
 
 router.delete('/:id',[       
     check('jwt').not().isEmpty(),
     checkFields
-],jwtValidator,solicitudesController.deleteSolicitud) //DELETE PRODUCTOS 
+],jwtValidator,solicitudesController.deleteSolicitud) //DELETE SOLICITUDES 
 
 module.exports = router;

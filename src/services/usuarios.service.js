@@ -13,7 +13,6 @@ class UsuariosService{
           throw new Error("Error in getUsers Service");
         }
       }
-
       async getUserById(id) {
         try {
           let user = await UsuariosModel.findOne({_id:id});
@@ -36,14 +35,12 @@ class UsuariosService{
 
       async createUser(user) {
         try {
-          
-
           let isUserRegistered = await UsuariosModel.findOne({email:user.email});
           if(isUserRegistered){
             throw new Error("User already registered");
           }
           else{            
-            console.log(user.password + process.env.SALT)
+            //console.log(user.password + process.env.SALT)
             //const salt = await bcrypt.genSalt(10);
             //console.log('salt:' + salt)
             user.password = bcrypt.hashSync(user.password, process.env.SALT);
