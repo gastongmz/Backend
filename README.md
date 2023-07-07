@@ -44,7 +44,7 @@ npx nodemon start
 # Estructura:
 
 ```bash
-├── README.md        
+├── README.md  
 ├── package-lock.json
 ├── package.json     
 ├── .env
@@ -94,8 +94,8 @@ PRIVATE_KEY = ***********
 | [Netlify](https://www.netlify.com/) | [3 ways to deploy React apps to Netlify](https://blog.logrocket.com/3-ways-to-deploy-react-apps-to-netlify/) | [Youtube](https://www.youtube.com/watch?v=sGBdp9r2GSg) |
 
 
-# Definicion de los end-points :
-### La documentacion de los metodoss parametros,tipos, etc. Se encuentra en swagger, estara disponible cuando se ejecute el servidor en la siguiente url: http://localhost:8080/api-docs/#/. 
+# API Endpoints:
+### La definicion de los metodos, parametros,tipos, etc. Se encuentra en swagger, estara disponible cuando se ejecute el servidor en la siguiente url: 'http://localhost:8080/api-docs/#/'. 
 - [Swagger](http://localhost:8080/api-docs/#/)
 
 <br />
@@ -119,5 +119,9 @@ PRIVATE_KEY = ***********
 
 # Font-end :world_map:
 - [Font-end](https://github.com/gastongmz/Porfolio)
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/Backend/asset/swagger.png" alt="" width="450px"/>
+</p>
 
 <br />
