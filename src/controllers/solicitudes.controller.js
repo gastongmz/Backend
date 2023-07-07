@@ -33,11 +33,11 @@ class SolicitudesController {
   }
   async createSolicitud(req, res) {
     try {  
-        let newProduct = await SolicitudesService.createSolicitud(req.body);
+        let newSolicitud = await SolicitudesService.createSolicitud(req.body);
         return res.status(201).json({
           status: 201,
           message: "Created!",
-          product: newProduct,
+          product: newSolicitud,
         });      
     } catch (err) {
       console.error(err);

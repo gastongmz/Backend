@@ -103,6 +103,17 @@ PRIVATE_KEY = ***********
 
 <br />
 
+
+# Base de datos:
+### Para la persistencia de datos se utilizo mongodb en cloud. 
+- [Mongodb](https://cloud.mongodb.com/)
+### Colecciones:
+<p align="center">
+<img src="https://github.com/gastongmz/Backend/blob/main/asset/db.png" alt="" width="650px"/>
+</p>
+
+<br />
+
 # Paquetes que se usaron:
 
 | Paquetetes  |
