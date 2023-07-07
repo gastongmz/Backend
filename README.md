@@ -121,7 +121,7 @@ PRIVATE_KEY = ***********
 - [Font-end](https://github.com/gastongmz/Porfolio)
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/Backend/asset/swagger.png" alt="" width="450px"/>
+<img src="https://raw.githubusercontent.com/gastonmgz/Backend/main/asset/swagger.png" alt="" width="450px"/>
 </p>
 
 <br />
