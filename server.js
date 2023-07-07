@@ -3,6 +3,8 @@ const express = require('express');
 const {dbConnection} = require('./src/db/config');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+var swaggerUi = require('swagger-ui-express'); 
+swaggerDocument = require('./swagger.json'); 
 
 
 const app = express();
@@ -42,6 +44,7 @@ app.get('/login', function (req, res) {
 
 app.use("/api/usuarios", require("./src/routes/usuarios.routes"));
 app.use("/api/solicitudes", require("./src/routes/solicitudes.routes"));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.listen(process.env.PORT, () =>{
     console.log('App listening on PORT: '+ process.env.PORT);
