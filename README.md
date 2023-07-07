@@ -97,9 +97,9 @@ PRIVATE_KEY = ***********
 # API Endpoints:
 ### La definicion de los metodos, parametros,tipos, etc. Se encuentra en swagger, estara disponible cuando se ejecute el servidor en la siguiente url: 'http://localhost:8080/api-docs/#/'. 
 - [Swagger](http://localhost:8080/api-docs/#/)
-
-<br />
-
+<p align="center">
+<img src="https://github.com/gastongmz/Backend/blob/main/asset/swagger.png" alt="" width="650px"/>
+</p>
 
 <br />
 
@@ -120,8 +120,6 @@ PRIVATE_KEY = ***********
 # Font-end :world_map:
 - [Font-end](https://github.com/gastongmz/Porfolio)
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/gastonmgz/Backend/main/asset/swagger.png" alt="" width="450px"/>
-</p>
+
 
 <br />
