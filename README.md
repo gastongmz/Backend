@@ -48,7 +48,7 @@ npx nodemon start
 ├── package-lock.json
 ├── package.json     
 ├── .env
-├── gitignore
+├── .gitignore
 ├── server.js
 ├── swagger.json
 └──src   
@@ -94,6 +94,12 @@ PRIVATE_KEY = ***********
 | [Netlify](https://www.netlify.com/) | [3 ways to deploy React apps to Netlify](https://blog.logrocket.com/3-ways-to-deploy-react-apps-to-netlify/) | [Youtube](https://www.youtube.com/watch?v=sGBdp9r2GSg) |
 
 
+# Definicion de los end-points :
+### La documentacion de los metodoss parametros,tipos, etc. Se encuentra en swagger, estara disponible cuando se ejecute el servidor en la siguiente url: http://localhost:8080/api-docs/#/. 
+- [Swagger](http://localhost:8080/api-docs/#/)
+
+<br />
+
 
 <br />
 
@@ -112,6 +118,6 @@ PRIVATE_KEY = ***********
 <br />
 
 # Font-end :world_map:
-- [Backend](https://github.com/gastongmz/Porfolio)
+- [Font-end](https://github.com/gastongmz/Porfolio)
 
 <br />
