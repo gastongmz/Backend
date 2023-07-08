@@ -88,11 +88,12 @@ PRIVATE_KEY = ***********
 
 ```
 # Hosting :globe_with_meridians:
-## Netlify
-| Site   | Docs  | Demo  |
-| :-------------: |:-------------: |:-------------: |
-| [Netlify](https://www.netlify.com/) | [3 ways to deploy React apps to Netlify](https://blog.logrocket.com/3-ways-to-deploy-react-apps-to-netlify/) | [Youtube](https://www.youtube.com/watch?v=sGBdp9r2GSg) |
 
+# Seguridad:
+### Para la autenticacion de front a los endpoints, se utilizo JSON Web Token (JWT). 
+- [JWT](https://jwt.io/)
+
+<br />
 
 # API Endpoints:
 ### La definicion de los metodos, parametros,tipos, etc. Se encuentra en swagger, estara disponible cuando se ejecute el servidor en la siguiente url: 'http://localhost:8080/api-docs/#/'. 
